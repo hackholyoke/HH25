@@ -106,13 +106,13 @@ const TeamPage = () => {
                 
                 
                 <MemberCards frontCard={coChair} mbrPic={zoey} 
-                name={"Zoey Hong"}
-                pronouns={"she/her"} year ={"2025"}
-                major ={"Computer Science"}
-                answer={"I'm excited for our first fully in-person hackathon since COVID! I'm looking forward to meeting new people, mingling, and sharing passions. Hope you have a great time at HackHolyoke!"}/>
+                name={"Felicia Nemoto-Pace"}
+                pronouns={"they/them"} year ={"2027"}
+                major ={"Computer Science, Critical Race/Political Economy"}
+                answer={"I'm thrilled to be a part of the groundbreaking work we do at HackHolyoke to foster new generations of conscientious, diverse, and critical programmers!"}/>
 
                 <MemberCards frontCard={coChair} mbrPic={yerim} 
-                name={"Yerim Oh"}
+                name={"Ed Cobbinah"}
                 pronouns={"she/her"} year ={"2025"}
                 major ={"Statistics"}
                 answer={"As a co-chair for HackHolyoke, I’m thrilled about this incredible opportunity we have to create something special together. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
