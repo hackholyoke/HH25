@@ -30,7 +30,7 @@ export const RegisterButton = () => {
     function handleRegisterPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
+            window.open('https://forms.gle/ru1h915K28h3C4HSA', '_blank');
 
         }, 300);
 
@@ -83,7 +83,7 @@ export const JoinDiscordButton = () => {
     function handleJoinPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://discord.gg/QG4jccjS', '_blank');
+            window.open('https://discord.com/invite/nwr4uhEF', '_blank');
         }, 300);
     }
     return (

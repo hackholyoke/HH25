@@ -19,7 +19,7 @@ const AboutUS = () => {
             represent what we hope the tech industry will look like.
         </p>
         <p>
-            (HackHolyoke 2024 will take place on November 9-10th, 2024 fully in-person tea breaks, information sessions, 
+            (HackHolyoke 2025 will take place on November 15-16th, 2025 fully in-person tea breaks, information sessions, 
             and workshops.)
         </p>
 

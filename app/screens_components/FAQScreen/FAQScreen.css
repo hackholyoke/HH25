@@ -1,68 +1,25 @@
-.FAQ-heading{
-    font-family: 'Audiowide' ;
-    color:aliceblue;
-    display: flex;
-    justify-content: center;  /* Horizontally center */
-    align-items: center;
-    font-size: 60px;
-    
-}
 .faqScreen{
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Optional: Adjust spacing between sides */
-    row-gap: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 28px 48px;                 /* row/col gaps */
+  margin: 0 8%;
 }
 
-/* Side styles */
 .leftSideFAQ,
-.rightSideFAQ {
-    width: 600px; /* Adjust width to ensure both fit side by side */
-    padding: 2px; /* Optional: Add padding */
-    /*box-sizing: border-box; /* Ensure padding is included in width */
-    /*position: relative; /* Positioning context */
+.rightSideFAQ { width: 100%; }    /* columns flow automatically */
+
+@media (max-width: 1130px){
+  .faqScreen{ grid-template-columns: 1fr; margin: 0 5%; }
+}
+@media (max-width: 500px){
+  .FAQ-heading{ font-size: 35px; }
+  .faqScreen{ margin: 0 3%; gap: 20px; }
 }
 
-@media screen and (max-width: 1130px) {
-    .faqScreen{
-        flex-direction: column; 
-        gap: 0px;
-
-    }
-    .leftSideFAQ,
-    .rightSideFAQ{
-
-      
-    }
-}
-
-@media screen and (max-width:710px){
-    .leftSideFAQ,
-    .rightSideFAQ {
-        width: 85vw;
-    } 
-
-    .faqScreen {
-        margin-left: 5%; /* Reduce margin for smaller screens */
-        margin-right: 5%;
-    }
-    
-}
-
-
-@media screen and (max-width: 500px) {
-    .FAQ-heading {
-        font-size: 35px; 
-    }
-
-    .leftSideFAQ,
-    .rightSideFAQ {
-        width: 95vw; 
-    }
-
-    .faqScreen {
-        margin-left: 3%; 
-        margin-right: 3%;
-    }
+.FAQ-heading{
+   margin: 40px auto 20px;     /* centers the block, removes default h1 margins */
+   text-align: center;         /* centers the text */
+   color: #e9f2ff;
+   font-size: clamp(32px, 6vw, 64px);
+   letter-spacing: .5px;
 }

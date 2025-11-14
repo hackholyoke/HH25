@@ -25,11 +25,13 @@ import FH_fold from '../../assets/faqImg/FH_fold.png';
 import Experience_unfold from '../../assets/faqImg/Experience_unfold.png';
 import Experience_fold from '../../assets/faqImg/Experience_fold.png';
 import './FAQScreen.css';
+import { Audiowide } from 'next/font/google';
+const audiowide = Audiowide({ subsets: ['latin'], weight: '400', display: 'swap' });
 
 const FAQScreen = () =>{
     return(
         <div>
-            <h1 className="FAQ-heading">FAQ</h1>
+            <h1 className={`FAQ-heading ${audiowide.className}`}>FAQ</h1>
             <div className='faqScreen'>
                 <div className='leftSideFAQ'>
                     <FAQComp closeQ={What_is_HH_fold} openQ={What_is_HH_unfold} 
@@ -41,13 +43,13 @@ const FAQScreen = () =>{
                     <FAQComp closeQ={Participate_fold} openQ={Participate_unfold} 
                     answerText={"We're now open for registration! If you're interested in hacking with us, you can register here and then you will be all set. This year's hackathon is digital-focus, so if you're not a Mount Holyoke student, all you will need is your computer and an internet connection."}/>
                     <FAQComp closeQ={Free_fold} openQ={Free_unfold} 
-                    answerText={"Yes, it is! You don't have to pay any fees in order to participate in HackHolyoke 2024. Just come, build amazing projects, and win prizes!"}/>
+                    answerText={"Yes, it is! You don't have to pay any fees in order to participate in HackHolyoke 2025. Just come, build amazing projects, and win prizes!"}/>
                     <FAQComp closeQ={Other_way_fold} openQ={Other_way_unfold} 
                     answerText={"For current Mount Holyoke students, we're looking for on-site volunteers who can help us with our in-person components. ?Click here for more details?"}/>                                                          
                 </div>
                 <div className='rightSideFAQ'>
                     <FAQComp closeQ={Where_fold} openQ={Where_unfold} 
-                    answerText={"HackHolyoke 2024 is an in-person hackathon. All of our major happenings and hacking will be in-person held at Mount Holyoke College and can be attended on-site."}/>
+                    answerText={"HackHolyoke 2025 is an in-person hackathon. All of our major happenings and hacking will be in-person held at Mount Holyoke College and can be attended on-site."}/>
                     <FAQComp closeQ={Member_fold} openQ={Member_unfold} 
                     answerText={"Each team is allowed to have up to 4 members."}/>                
                     <FAQComp closeQ={Hackathon_fold} openQ={Hackathon_unfold} 

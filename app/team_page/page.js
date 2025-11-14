@@ -7,66 +7,43 @@ import SideMenu from '../components/SideMenu/sideMenu';
 import LogisticsCarousel from '../components/LogisticCarousel/LogisticsCarousel';
 import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
 
-import coChair from '../assets/team/coChair.png'
-import zoey from '../assets/team_pics/zoey.png'
-import yerim from '../assets/team_pics/yerim.png'
+import coChair from '../assets/team/CO-CHAIR.png'
+import felicia from '../assets/team_pics/felicia_nemoto_pace.PNG'
 
 import logistic from '../assets/team/logistic.png'
-import tia from '../assets/team_pics/tia_log.png'
-import jennifer from '../assets/team_pics/jennifer_log.png'
-import ruby from '../assets/team_pics/ruby_log.jpeg'
-import eli from '../assets/team_pics/Eli_log.png'
-import graceS from '../assets/team_pics/graceS_log.png'
+import linh from '../assets/team_pics/linh_nguyen.jpeg'
+import linda from '../assets/team_pics/linda_hu.jpg'
 
 import sponsor from '../assets/team/sponsor.png'
-import nha from '../assets/team_pics/nha_spn.png'
-import hana from '../assets/team_pics/hana_spn.png'
+import jaein from '../assets/team_pics/jaein_han.JPG'
 
 import design from '../assets/team/design.png'
-import linxi from '../assets/team_pics/linxi_design.png'
+import yiting from '../assets/team_pics/yiting_chu.jpeg'
 
 import mkt from '../assets/team/mkt.png'
-import graceL from '../assets/team_pics/graceL_mark.png'
+import cristina from '../assets/team_pics/cristina_lopez_mendoza.jpeg'
 
 import finance from '../assets/team/finance.png'
-import eonbi from '../assets/team_pics/eonbi_fin.png'
+import belle from '../assets/team_pics/belle_song.jpg'
 
 import web from '../assets/team/web.png'
-import adwoa from '../assets/team_pics/adwoa_web.png'
-import dora from '../assets/team_pics/dora_web.png'
+import annette from '../assets/team_pics/annette_darpoh.jpeg'
+import jennifer from '../assets/team_pics/Jennifer Liu.JPG'
 
 const TeamPage = () => {
     const logisticCards = [
         <MemberCards
-        frontCard={logistic} mbrPic={tia}
-        name={"Tia Mbabazi"} pronouns={"she/her"} year={"2025"}
-        major ={"Computer Science"}
+        frontCard={logistic} mbrPic={linh}
+        name={"Ling Nguyen"} pronouns={"she/her"} year={"2028"}
+        major ={"Data Science & Economics"}
         answer ={"I'm most excited about the community that shall be built among the hackers and seeing all the great innovations that are developed! "}
         />,
         <MemberCards
-        frontCard={logistic} mbrPic={jennifer}
-        name={"Jennifer Zhuang"} pronouns={"she/her"} year={"2025"}
+        frontCard={logistic} mbrPic={linda}
+        name={"Linda Hu"} pronouns={"she/they"} year={"2028"}
         major ={"Computer Science"}
         answer ={"I'm excited to witness everyone’s awesome ideas and see what kind of amazing projects people come up with!"}
         />,
-        <MemberCards
-        frontCard={logistic} mbrPic={ruby}
-        name={"Ruby Sapkota"} pronouns={"she/her"} year={"2025"}
-        major ={"Computer Science & Economics"}
-        answer ={"I'm excited to see fresh faces at HackHolyoke 2024 coming up with innovative and impactful ideas, as well as experienced hackers returning to showcase their skills. I feel inspired to watch everyone work together to build cool products that push the boundaries of creativity and technology."}
-        />,
-        <MemberCards
-        frontCard={logistic} mbrPic={eli}
-        name={"Elizaveta Kozlova"} pronouns={"she/her"} year={"2025"}
-        major ={"Computer Science & French"}
-        answer ={"I am excited to see all the projects!"}
-        />,
-        <MemberCards
-        frontCard={logistic} mbrPic={graceS}
-        name={"Grace Suh"} pronouns={"she/her"} year={"2025"}
-        major ={"Intended CS & Stat"}
-        answer ={"Can't wait to meet new people and learn more from this unforgettable event and people!"}
-        />
       ];
       const [isMobileView, setIsMobileView] = useState(false);
 
@@ -105,18 +82,11 @@ const TeamPage = () => {
                 {/* <h1 className='heading'>Co-chairs</h1> */}
                 
                 
-                <MemberCards frontCard={coChair} mbrPic={zoey} 
+                <MemberCards frontCard={coChair} mbrPic={felicia} 
                 name={"Felicia Nemoto-Pace"}
                 pronouns={"they/them"} year ={"2027"}
                 major ={"Computer Science, Critical Race/Political Economy"}
                 answer={"I'm thrilled to be a part of the groundbreaking work we do at HackHolyoke to foster new generations of conscientious, diverse, and critical programmers!"}/>
-
-                <MemberCards frontCard={coChair} mbrPic={yerim} 
-                name={"Ed Cobbinah"}
-                pronouns={"she/her"} year ={"2025"}
-                major ={"Statistics"}
-                answer={"As a co-chair for HackHolyoke, I’m thrilled about this incredible opportunity we have to create something special together. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
-                />
                
             </div>
 
@@ -138,33 +108,27 @@ const TeamPage = () => {
 
             <div id='sponsorship' className='team-container'>
                 {/* <h1 className='heading'>Sponsorship</h1> */}
-                <MemberCards frontCard={sponsor} mbrPic={nha}
-                name={"Nha-Van Ngyuen"}
-                pronouns={"she/her"} year ={"2027"}
-                major={"Computer Science & Economics"}
-                answer={"Seeing all the innovative products that hackers put out!"}
-                />
 
-                <MemberCards frontCard={sponsor} mbrPic={hana}
-                name={"Hana Cho"}
-                pronouns={"she/her"} year ={"2027"}
-                major={"Economics"}
+                <MemberCards frontCard={sponsor} mbrPic={jaein}
+                name={"Jaein Han"}
+                pronouns={"she/her"} year ={"2028"}
+                major={"Computer Science"}
                 answer={"The people coming! "}
                 />
             </div>
 
             <div id='webmaster' className='team-container'>
                 {/* <h1 className='heading'>Webmaster</h1> */}
-                <MemberCards frontCard={web} mbrPic={dora}
-                name={"Yu Wati Nyi"}
-                pronouns={"she/her"} year ={"2025"}
-                major={"Computer Science & Economics"}
+                <MemberCards frontCard={web} mbrPic={jennifer}
+                name={"Jennifer Liu"}
+                pronouns={"she/her"} year ={"2028"}
+                major={"Computer Science"}
                 answer={"I am most excited to see how creative people can be through the projects they will be hacking soon!"}
                 />
 
-                <MemberCards frontCard={web} mbrPic={adwoa}
-                name={"Adwoa Owusu"}
-                pronouns={"she/her"} year ={"2026"}
+                <MemberCards frontCard={web} mbrPic={annette}
+                name={"Annette Darpoh"}
+                pronouns={"she/her"} year ={"2027"}
                 major={"Computer Science & French"}
                 answer={"I'm excited to meet new people and see the amazing projects that participants come up with!"}
                 />
@@ -172,30 +136,30 @@ const TeamPage = () => {
 
             <div id='finance' className='team-container'>
                 {/* <h1 className='heading'>Finance</h1> */}
-                <MemberCards frontCard={finance} mbrPic={eonbi}
-                name={"Eonbi Choi"}
-                pronouns={"she/her"} year ={"2025"}
-                major={"Statistics"}
-                answer={"I'm excited to see the creativity and collaboration that our HackHolyoke 2024 participants will showcase throughout the event."}
+                <MemberCards frontCard={finance} mbrPic={belle}
+                name={"Belle Song"}
+                pronouns={"she/her"} year ={"2028"}
+                major={"Data Science"}
+                answer={"I'm excited to see the creativity and collaboration that our HackHolyoke 2025 participants will showcase throughout the event."}
                 />
             </div>
 
             <div id='marketing' className='team-container'>
                 {/* <h1 className='heading'>Marketing</h1> */}
-                <MemberCards frontCard={mkt} mbrPic={graceL}
-                name={"Grace Lee"}
-                pronouns={"she/her"} year ={"2025"}
-                major={"Biology & Psychology"}
+                <MemberCards frontCard={mkt} mbrPic={cristina}
+                name={"Cristina Lopez Mendoza"}
+                pronouns={"she/her"} year ={"2027"}
+                major={"Computer Science"}
                 answer={"I'm most excited to bring back HackHolyoke after its 2023 hiatus, and see everyone's great projects!"}
                 />
             </div>
 
             <div id='design' className='team-container'>
                 {/* <h1 className='heading'>Design</h1> */}
-                <MemberCards frontCard={design} mbrPic={linxi}
-                name={"Linxi Jiang"}
-                pronouns={"she/her"} year ={"2027"}
-                major={"Computer Science & Psychology"}
+                <MemberCards frontCard={design} mbrPic={yiting}
+                name={"Yiting Chu"}
+                pronouns={"she/her"} year ={"2028"}
+                major={"Mathematics"}
                 answer={"I‘m most excited about the collaborative spirit of the event—coming together with like-minded individuals to work towards a common goal, creating projects that have the potential to make a real-world impact."}
                 />
             </div>

@@ -16,7 +16,14 @@ const numberWithinRange = (number, min, max) =>
 
 const ChallengeCarousel = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const defaultOptions = {
+  loop: true,
+  align: 'center',
+  containScroll: 'trimSnaps',
+  skipSnaps: false,
+};
+const mergedOptions = { ...defaultOptions, ...(options || {}) };
+const [emblaRef, emblaApi] = useEmblaCarousel(mergedOptions);
   const [activeIndex, setActiveIndex] = useState(0)
   const tweenFactor = useRef(0)
   const tweenNodes = useRef([])

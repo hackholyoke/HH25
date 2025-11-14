@@ -30,7 +30,7 @@ const StatsScreen =() =>{
          {/* HEADING */}
         
          <div className = 'line-left'></div>
-         <p className='stats_heading'>HackHolyoke 2022</p>
+         <p className='stats_heading'>HackHolyoke 2024</p>
          <div className = 'line-right'></div>
         
          <p className='stats_heading_2'>in numbers</p>

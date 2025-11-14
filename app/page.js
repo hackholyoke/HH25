@@ -6,7 +6,7 @@ import MenuBar from './components/Menu/menuBar.js';
 import HomeScreen from './screens_components/Home/home.js'
 import AboutUS from './screens_components/AboutUs/about_us.js';
 import StatsScreen from './screens_components/Stats/stats.js';
-import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
+// import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import Contact from './screens_components/Contacts/contact.js';
 import FAQScreen from './screens_components/FAQScreen/FAQScreen.js';
@@ -37,12 +37,6 @@ const HomePage = () => {
             <ChallengeScreen/>
          </div>
 
-         <div id = "speakers" className='container'>
-
-            <SpeakerScreen/>
-            {/* <p className='coming-soon'>Coming Soon</p> */}
-
-         </div>
 
          <div id = "faq">
             {/* <FAQ/> */}
