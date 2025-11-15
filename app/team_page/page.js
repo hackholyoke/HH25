@@ -9,6 +9,7 @@ import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
 
 import coChair from '../assets/team/CO-CHAIR.png'
 import felicia from '../assets/team_pics/felicia_nemoto_pace.PNG'
+import ed from '../assets/team_pics/ed.jpg'
 
 import logistic from '../assets/team/logistic.png'
 import linh from '../assets/team_pics/linh_nguyen.jpeg'
@@ -29,6 +30,8 @@ import belle from '../assets/team_pics/belle_song.jpg'
 import web from '../assets/team/web.png'
 import annette from '../assets/team_pics/annette_darpoh.jpeg'
 import jennifer from '../assets/team_pics/Jennifer Liu.JPG'
+
+
 
 const TeamPage = () => {
     const logisticCards = [
@@ -87,6 +90,12 @@ const TeamPage = () => {
                 pronouns={"they/them"} year ={"2027"}
                 major ={"Computer Science, Critical Race/Political Economy"}
                 answer={"I'm thrilled to be a part of the groundbreaking work we do at HackHolyoke to foster new generations of conscientious, diverse, and critical programmers!"}/>
+
+                <MemberCards frontCard={coChair} mbrPic={ed} 
+                name={"Edlyn Cobbinah"}
+                pronouns={"she/her"} year ={"2027"}
+                major ={"Economics and Computer Science"}
+                answer={"I'm excited to see what everyone comess up with!"}/>
                
             </div>
 

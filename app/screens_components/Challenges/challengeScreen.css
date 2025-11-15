@@ -7,7 +7,7 @@
     color:aliceblue;
     display: flex;
     justify-content: center;  /* Horizontally center */
-    align-items: center;
+    align-items: left;
     font-size: 60px;
     
 }
